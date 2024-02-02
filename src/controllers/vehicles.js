@@ -1,10 +1,10 @@
-const { usersGetService } = require("../services/users/get");
-const { usersGetSingleService } = require("../services/users/getSingle");
-const { usersPostService } = require("../services/users/post");
-const { usersPutService } = require("../services/users/put");
+const { vehiclesGetService } = require("../services/vehicles/get");
+const { vehiclesGetSingleService } = require("../services/vehicles/getSingle");
+const { vehiclesPostService } = require("../services/vehicles/post");
+const { vehiclesPutService } = require("../services/vehicles/put");
 
-exports.getUsersController = (req, res) => {
-  usersGetService()
+exports.getVehiclesController = (req, res) => {
+  vehiclesGetService()
     .then((response) => {
       if (!response.status) {
         throw new Error(response.message);
@@ -23,8 +23,8 @@ exports.getUsersController = (req, res) => {
     });
 };
 
-exports.getSingleUsersController = (req, res) => {
-    usersGetSingleService(req.params)
+exports.getSingleVehiclesController = (req, res) => {
+    vehiclesGetSingleService(req.params)
       .then((response) => {
         if (!response.status) {
           throw new Error(response.message);
@@ -41,10 +41,10 @@ exports.getSingleUsersController = (req, res) => {
           message: err.message,
         });
       });
-  };
+};
 
-exports.postUsersController = (req, res) => {
-    usersPostService(req.body)
+exports.postVehiclesController = (req, res) => {
+    vehiclesPostService(req.body)
       .then((response) => {
         if (!response.status) {
           throw new Error(response.message);
@@ -61,10 +61,10 @@ exports.postUsersController = (req, res) => {
           message: err.message,
         });
       });
-  };
+};
 
-exports.putUsersController = (req, res) => {
-    usersPutService(req.body)
+exports.putVehiclesController = (req, res) => {
+    vehiclesPutService(req.body)
       .then((response) => {
         if (!response.status) {
           throw new Error(response.message);
@@ -81,4 +81,4 @@ exports.putUsersController = (req, res) => {
           message: err.message,
         });
       });
-  };
+};

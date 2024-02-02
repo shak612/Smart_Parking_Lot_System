@@ -1,10 +1,10 @@
-const { theatersGetService } = require("../services/theaters/get");
-const { theatersGetSingleService } = require("../services/theaters/getSingle");
-const { theatersPostService } = require("../services/theaters/post");
-const { theatersPutService } = require("../services/theaters/put");
+const { parkingSpotsGetService } = require("../services/parkingSpots/get");
+const { parkingSpotsGetSingleService } = require("../services/parkingSpots/getSingle");
+const { parkingSpotsPostService } = require("../services/parkingSpots/post");
+const { parkingSpotsPutService } = require("../services/parkingSpots/put");
 
-exports.getTheatersController = (req, res) => {
-  theatersGetService()
+exports.getParkingSpotsController = (req, res) => {
+  parkingSpotsGetService()
     .then((response) => {
       if (!response.status) {
         throw new Error(response.message);
@@ -23,8 +23,8 @@ exports.getTheatersController = (req, res) => {
     });
 };
 
-exports.getSingleTheatersController = (req, res) => {
-    theatersGetSingleService(req.params)
+exports.getSingleParkingSpotsController = (req, res) => {
+    parkingSpotsGetSingleService(req.params)
       .then((response) => {
         if (!response.status) {
           throw new Error(response.message);
@@ -43,8 +43,8 @@ exports.getSingleTheatersController = (req, res) => {
       });
 };
 
-exports.postTheatersController = (req, res) => {
-    theatersPostService(req.body)
+exports.postParkingSpotsController = (req, res) => {
+    parkingSpotsPostService(req.body)
       .then((response) => {
         if (!response.status) {
           throw new Error(response.message);
@@ -63,8 +63,8 @@ exports.postTheatersController = (req, res) => {
       });
 };
 
-exports.putTheatersController = (req, res) => {
-    theatersPutService(req.body)
+exports.putParkingSpotsController = (req, res) => {
+    parkingSpotsPutService(req.body)
       .then((response) => {
         if (!response.status) {
           throw new Error(response.message);
