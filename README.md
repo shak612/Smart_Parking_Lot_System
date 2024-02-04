@@ -11,38 +11,26 @@ Objective: Design the low-level architecture for a backend system of a smart par
 
 ## Implementation
 
-- #Parking Spot Allocation: Automatically assign an available parking spot to a vehicle when it enters, based on the vehicle’s size (e.g., motorcycle, car, bus).
-
+- Parking Spot Allocation: Automatically assign an available parking spot to a vehicle when it enters, based on the vehicle’s size (e.g., motorcycle, car, bus).
+  
 - Check-In and Check-Out: Record the entry and exit times of vehicles.
 
 - Parking Fee Calculation: Calculate fees based on the duration of stay and vehicle type.
 
-- Real-Time Availability Update: Update the availability of parking spots in real-time as vehicles enter and leave.  
+- Real-Time Availability Update: Update the availability of parking spots in real-time as vehicles enter and leave.
+
+- Data Model: Design a database schema to manage parking spots, vehicles, and parking transactions.
+
+- Algorithm for Spot Allocation: Develop an algorithm to efficiently assign parking spots to incoming vehicles.
+
+- Fee Calculation Logic: Implement logic to calculate fees based on parking duration and vehicle type.
+
+- Concurrency Handling: Ensure the system can handle multiple vehicles entering or exiting simultaneously.
+  
 ## Routes
 
-- POST api/users/post - Create new user.
-- GET api/users/get - Get all users.
-- GET api/users/get/:user_id - Get single user
-
-- POST api/theaters/post - Create new theater.
-- GET api/theaters/get - Get all theaters.
-- GET api/theaters/get/:theater_id - Get single theater
-
-- POST api/theaters/post - Create new theater.
-- GET api/theaters/get - Get all theaters.
-- GET api/theaters/get/:theater_id - Get single theater
-
-- POST api/movies/post - Create new movie.
-- GET api/movies/get - Get all movies.
-- GET api/movies/get/:movies_id - Get single movies
-
-- POST api/movies/post - Create new movie.
-- GET api/movies/get - Get all movies.
-- GET api/movies/get/:movies_id - Get single movie
-
-- POST api/shows/post - Create new show and you should pass movie_id, theater_id as a foreign key.
-- GET api/shows/get/:theater_id - Get all shows associate with theater and if you want get show by date then you have to pass query params in which key should be "dateAndTime" and value "2024-01-16 18:00:00"
-
+- Working on the routes I'll update it soon!!
+- 
 ## Installation
 
 To expose the endpoints into local, run the following commands.
