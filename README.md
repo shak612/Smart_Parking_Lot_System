@@ -1,6 +1,6 @@
-# Book My Show API
+# Designed a Smart Parking Lot System
 
-Objective: Bookmyshow is a ticketing platform where you can book tickets for a movie show.
+Objective: Design the low-level architecture for a backend system of a smart parking lot. This system should handle vehicle entry and exit management, parking space allocation, and fee calculation.
 
 ## Table of Contents
 
@@ -11,9 +11,13 @@ Objective: Bookmyshow is a ticketing platform where you can book tickets for a m
 
 ## Implementation
 
-- As part of this assignment, we need to build API’s for the following feature. As a user, I can select any theatre in the city. On selecting the theatre, I should be able to see the dates of next 7 days.
-- I can click on any date and the page should load to give me all the movies in that theatre on that given date. Movies should contain details of all the showtimes.
-  
+- #Parking Spot Allocation: Automatically assign an available parking spot to a vehicle when it enters, based on the vehicle’s size (e.g., motorcycle, car, bus).
+
+- Check-In and Check-Out: Record the entry and exit times of vehicles.
+
+- Parking Fee Calculation: Calculate fees based on the duration of stay and vehicle type.
+
+- Real-Time Availability Update: Update the availability of parking spots in real-time as vehicles enter and leave.  
 ## Routes
 
 - POST api/users/post - Create new user.
