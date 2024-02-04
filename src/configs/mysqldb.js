@@ -1,7 +1,7 @@
 const Sequalize = require('sequelize');
 
 const sequalize = new Sequalize(
-		'bookmyshow', 
+		'parkingLot', 
 		'root',
 		'Shakir9818!!', {
 			dialect: 'mysql',
@@ -15,7 +15,7 @@ const sequalize = new Sequalize(
 
 // Check the connection to database - calling authenticate method
 
-const connectToMysql = async ()=>{
+const connectToMysql = async () => {
 	try{
 		await sequalize.authenticate();
 		console.log("Successfully connected to the database.");

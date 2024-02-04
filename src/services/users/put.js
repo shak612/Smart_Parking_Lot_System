@@ -1,3 +1,0 @@
-exports.usersPutService = async (data) => {
-    
-}

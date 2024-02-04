@@ -14,10 +14,10 @@ const ParkingSpot = Sequalize.define('ParkingSpot', {
 	  require: true
 	},
 	floor: {
-	  type: DataTypes.INTEGER,
+	  type: DataTypes.INTEGER, // 1, 2, 3
 	},
 	location: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING, // A, B, C, D
     },
 	isOccupied: {
 	  type: DataTypes.BOOLEAN,
