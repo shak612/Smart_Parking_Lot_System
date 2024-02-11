@@ -8,7 +8,7 @@ const Ticket = sequalize.define('tickets', {
       type: DataTypes.INTEGER,
       primaryKey: true,
       autoIncrement: true,
-      indexes: [{ unique: true, fields: ['ticket_id'] }]
+      indexes: [{ unique: true, fields: ['ticketId'] }]
     },
     startTime: {
       type: DataTypes.DATE,
